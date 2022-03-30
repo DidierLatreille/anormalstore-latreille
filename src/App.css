@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+.NavBar{
+  font-family: 'Dosis', sans-serif;
+  font-size: 40px;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content:space-between;
+  background-color: #fab921;
+}
+
+.StoreBar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5%;
+}
+
+.MenuBar {
+  width: 8%;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 0.5%;
+}
+
+.ElementoMenu {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
