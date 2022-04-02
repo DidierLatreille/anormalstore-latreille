@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
-const ItemListContainer = () => {
+const ItemListContainer = ({greeting}) => {
     return (
         <>
-                <h2>Bienvenido a AnormalStore</h2>
+                <h2>{greeting}</h2>
         </>
     );
 }
