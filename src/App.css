@@ -16,3 +16,9 @@
     color: rgb(255, 204, 0);
     font-size: 20px;
 }
+
+.botonCant {
+    background-color: rgb(255, 196, 0) !important;
+    border-color: black !important;
+    border-width: 2px !important;
+}
