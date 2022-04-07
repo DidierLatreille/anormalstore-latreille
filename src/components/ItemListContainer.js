@@ -1,17 +1,27 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect, useState } from 'react';
 import '../App.css';
-import ItemCount from './ItemCount';
+import { getData } from './data';
+import ItemList from './ItemList'
 
 const ItemListContainer = ({greeting}) => {
 
-    const onAdd = (qty) => {
-        alert("Has seleccionado " + qty + " items.");
-    }
+    const [fotos, setFotos] = useState([])
+
+    useEffect(() => {
+        async function pedirDatos() {
+            let datosRecibidos = await getData();
+            setFotos(datosRecibidos);
+        }
+        pedirDatos();
+    }, [])
 
     return (
         <>
                 <h2>{greeting}</h2>
-                <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+
+                <ItemList productos={fotos}/>
         </>
     );
 }
