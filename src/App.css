@@ -18,7 +18,50 @@
 }
 
 .botonCant {
-    background-color: rgb(255, 196, 0) !important;
+    background-color: rgb(255, 136, 0) !important;
     border-color: black !important;
     border-width: 2px !important;
+    border-radius: 15px !important;
+    margin: 1px;
+}
+
+.Cards {
+    margin: 1%;
+}
+
+.VerMas {
+    background-color: rgb(154, 3, 3) !important;
+    border-radius: 20px !important;
+}
+
+.ProductAmountContainer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 15px;
+}
+
+.ProductAmount {
+    font-size: 24px;
+    margin: 5px;
+}
+
+.WrapperDetail{
+    padding: 50px;
+    display: flex;
+}
+
+.ImgContainer{
+    flex: 1;
+}
+
+.ImageDetail{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+.InfoContainer{
+    flex: 1;
+    padding: 0px 50px;
 }

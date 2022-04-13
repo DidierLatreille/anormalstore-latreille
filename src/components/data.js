@@ -1,32 +1,66 @@
-import imagen1 from './productIMG/imagen1.jpg';
-import imagen2 from './productIMG/imagen2.jpg';
-import imagen3 from './productIMG/imagen3.jpg';
-
 const data = [
     {
         id: 1,
         title: "imagen1",
         price: "10 U$D",
-        img: imagen1
+        description: "asdasda",
+        stock:20,
+        img: {
+            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        }
     },
     {
         id: 2,
         title: "imagen2",
         price: "20 U$D",
-        img: imagen2
+        description: "asdasda",
+        stock:20,
+        img: {
+            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        }
     },
     {
         id: 3,
         title: "imagen3",
         price: "20 U$D",
-        img: imagen3
+        description: "asdasda",
+        stock:20,
+        img: {
+            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        }
+    },
+    {
+        id: 4,
+        title: "imagen3",
+        price: "20 U$D",
+        description: "asdasda",
+        stock:20,
+        img: {
+            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        }
+    },
+    {
+        id: 5,
+        title: "imagen3",
+        price: "20 U$D",
+        description: "asdasda",
+        stock:20,
+        img: {
+            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        }
+    },
+    {
+        id: 6,
+        title: "imagen3",
+        price: "20 U$D",
+        description: "asdasda",
+        stock:20,
+        img: {
+            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        }
     }
 ]
 
-export const getData = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            return resolve(data);
-        }, 2000)
-    })
+module.exports = {
+    data,
 }

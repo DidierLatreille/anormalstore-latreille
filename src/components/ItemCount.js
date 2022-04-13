@@ -1,6 +1,5 @@
 import { Button } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
-import { ProductAmountContainer, ProductAmount } from './styledComponents';
 import "../App.css";
 
 const ItemCount = ({ stock = 0, initial = 1,  onAdd }) => {
@@ -23,16 +22,16 @@ const ItemCount = ({ stock = 0, initial = 1,  onAdd }) => {
     }
     
     return (
-        <ProductAmountContainer>
+        <div className='ProductAmountContainer'>
             <Button className= "botonCant" onClick={restar}>-</Button>
-            <ProductAmount>{count}</ProductAmount>
+            <div className='ProductAmount'>{count}</div>
             <Button className= "botonCant" onClick={aumentar}>+</Button>
             {
                 stock
                 ? <Button className= "botonCant" onClick={() => onAdd(count)}>Agregar al carrito</Button>
                 : <Button disabled>Sin stock</Button>
             }    
-        </ProductAmountContainer>
+        </div>
     );
 }
 

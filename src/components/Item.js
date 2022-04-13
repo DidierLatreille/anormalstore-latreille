@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Button } from 'react-bootstrap';
 import ItemCount from "./ItemCount";
+import "../App.css";
 
 export default function Item({ id, title, price, img}) {
 
@@ -10,13 +11,13 @@ export default function Item({ id, title, price, img}) {
 
     return (
         <>
-            <Card key={id} style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={img} />
+            <Card className="Cards" key={id} style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={img.url} />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{price}</Card.Text>
                 </Card.Body>
-                <Button>Ver +</Button>
+                <Button className="VerMas">Ver +</Button>
                 <ItemCount stock={5} initial={1} onAdd={onAdd}/>
             </Card>
         </>
