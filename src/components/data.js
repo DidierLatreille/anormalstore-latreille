@@ -3,7 +3,7 @@ const data = [
         id: 1,
         title: "imagen1",
         price: "10 U$D",
-        description: "asdasda",
+        description: "una muy buena imagen",
         stock:20,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
@@ -11,7 +11,7 @@ const data = [
         id: 2,
         title: "imagen2",
         price: "20 U$D",
-        description: "asdasda",
+        description: "una muy buena imagen",
         stock:20,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
@@ -19,7 +19,7 @@ const data = [
         id: 3,
         title: "imagen3",
         price: "20 U$D",
-        description: "asdasda",
+        description: "una muy buena imagen",
         stock:20,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
@@ -27,7 +27,7 @@ const data = [
         id: 4,
         title: "imagen3",
         price: "20 U$D",
-        description: "asdasda",
+        description: "una muy buena imagen",
         stock:20,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
@@ -35,7 +35,7 @@ const data = [
         id: 5,
         title: "imagen3",
         price: "20 U$D",
-        description: "asdasda",
+        description: "una muy buena imagen",
         stock:20,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
@@ -43,7 +43,7 @@ const data = [
         id: 6,
         title: "imagen3",
         price: "20 U$D",
-        description: "asdasda",
+        description: "una muy buena imagen",
         stock:20,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     }
