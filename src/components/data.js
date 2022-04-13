@@ -5,9 +5,7 @@ const data = [
         price: "10 U$D",
         description: "asdasda",
         stock:20,
-        img: {
-            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
-        }
+        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
         id: 2,
@@ -15,9 +13,7 @@ const data = [
         price: "20 U$D",
         description: "asdasda",
         stock:20,
-        img: {
-            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
-        }
+        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
         id: 3,
@@ -25,9 +21,7 @@ const data = [
         price: "20 U$D",
         description: "asdasda",
         stock:20,
-        img: {
-            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
-        }
+        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
         id: 4,
@@ -35,9 +29,7 @@ const data = [
         price: "20 U$D",
         description: "asdasda",
         stock:20,
-        img: {
-            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
-        }
+        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
         id: 5,
@@ -45,9 +37,7 @@ const data = [
         price: "20 U$D",
         description: "asdasda",
         stock:20,
-        img: {
-            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
-        }
+        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
         id: 6,
@@ -55,9 +45,7 @@ const data = [
         price: "20 U$D",
         description: "asdasda",
         stock:20,
-        img: {
-            url: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
-        }
+        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     }
 ]
 

@@ -6,14 +6,14 @@ const ItemDetail = ({ item }) => {
         alert("You have selected " + qty + " items.");
     }
 
-    console.log(item)
+    console.log()
 
     return (
         <>
             <div className='DetailContainer'>
                 <div className='WrapperDetail'>
                     <div className='ImgContainer'>
-                        <img alt="" className='ImageDetail' src={item.img.url} />
+                        <img alt="" className='ImageDetail' src={item.img} />
                     </div>
                     <div className='InfoContainer'>
                         <div>{item.title}</div>
