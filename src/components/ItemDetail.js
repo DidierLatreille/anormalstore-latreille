@@ -9,7 +9,9 @@ const ItemDetail = ({ item }) => {
     console.log()
 
     return (
-        <>
+        <>{
+            item && item.img
+            ?
             <div className='DetailContainer'>
                 <div className='WrapperDetail'>
                     <div className='ImgContainer'>
@@ -21,9 +23,11 @@ const ItemDetail = ({ item }) => {
                         <div>$ {item.price}</div>
                         <div>{item.stock} unidades en stock</div>
                     </div>
-                    <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+                    <ItemCount className="ContadorDetalle" stock={item.stock} initial={1} onAdd={onAdd} />
                 </div>
             </div>
+            : <p>Cargando...</p>
+        }
         </>
     );
 }

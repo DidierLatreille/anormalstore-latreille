@@ -1,27 +1,29 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
-import '../App.css';
-import { getData } from './data';
+import customFetch from "./utils/customFetch";
 import ItemList from './ItemList'
+import { useParams } from 'react-router';
+const {data} = require('./data');
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
 
     const [fotos, setFotos] = useState([])
+    const { idCategory } = useParams();
+
+    console.log(idCategory);
 
     useEffect(() => {
-        async function pedirDatos() {
-            let datosRecibidos = await getData();
-            setFotos(datosRecibidos);
-        }
-        pedirDatos();
-    }, [])
+        customFetch(2000, data.filter(item => {
+            if(idCategory === undefined) return item;
+            return item.categoryId === parseInt(idCategory)
+        }))
+        .then(result => setFotos(result))
+        .catch(err => console.log(err))
+    }, [fotos]);
 
     return (
         <>
-                <h2>{greeting}</h2>
-
-                <ItemList productos={fotos}/>
+            <ItemList productos={fotos} />
         </>
     );
 }

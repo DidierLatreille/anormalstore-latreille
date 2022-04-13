@@ -5,7 +5,8 @@ const data = [
         price: "10 U$D",
         description: "una muy buena imagen",
         stock:20,
-        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        categoryId: 2,
+        img: "https://i.ibb.co/3Nv3hYP/Herbarium14.jpg"
     },
     {
         id: 2,
@@ -13,6 +14,7 @@ const data = [
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
+        categoryId: 1,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
@@ -21,6 +23,7 @@ const data = [
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
+        categoryId: 1,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
@@ -29,6 +32,7 @@ const data = [
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
+        categoryId: 1,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
@@ -37,6 +41,7 @@ const data = [
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
+        categoryId: 1,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     },
     {
@@ -45,6 +50,7 @@ const data = [
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
+        categoryId: 1,
         img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
     }
 ]
