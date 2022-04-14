@@ -7,23 +7,17 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
     return (
         <>
-        <Navbar bg="dark" variant="white">
+        <Navbar className="NavBar" bg="dark" variant="white">
             <Container>
                 <Navbar.Brand href="#home">
-                    <h1 className="TituloNavBar">AnormalStore</h1>
+                <Link style={{textDecoration: "none"}} to='/'><h1 className="TituloNavBar">AnormalStore</h1></Link>
                 </Navbar.Brand>
                 <Nav className="justify-content-center" activeKey="/home">
                     <Nav.Item>
-                      <Link to='/category/1' style={{textDecoration: "none", color: "white"}}>Animales</Link>
+                      <Link to='/category/1' className="ItemNavBar" style={{textDecoration: "none"}}>Animales</Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Link to='/category/2' style={{textDecoration: "none", color: "white"}}>StreetPhotography</Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="ItemNavBar" href="/home">Tienda</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link className="ItemNavBar" href="/home">Acerca De</Nav.Link>
+                      <Link to='/category/2' className="ItemNavBar" style={{textDecoration: "none"}}>StreetPhotography</Link>
                     </Nav.Item>
                     <Nav.Item>
                       <CartWidget/>

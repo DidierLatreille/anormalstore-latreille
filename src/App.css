@@ -4,6 +4,13 @@
     font-family: 'Dosis', sans-serif;
 }
 
+.NavBar{
+    position: fixed !important;
+    top: 0px;
+    z-index: 4;
+    width: 100%;
+}
+
 .TituloNavBar {
     letter-spacing: 2px;
     margin: 0px;
@@ -13,42 +20,9 @@
 }
 
 .ItemNavBar {
-    color: rgb(255, 204, 0);
+    color: rgb(255, 153, 0);
     font-size: 20px;
-}
-
-.botonCant {
-    background-color: rgb(255, 136, 0) !important;
-    border-color: black !important;
-    border-width: 2px !important;
-    border-radius: 15px !important;
-    margin: 1px;
-}
-
-.Cards {
-    margin: 1%;
-}
-
-.VerMas {
-    background-color: rgb(154, 3, 3) !important;
-    border-radius: 20px !important;
-}
-
-.ProductAmountContainer{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    margin: 15px;
-}
-
-.ProductAmount {
-    font-size: 24px;
-    margin: 5px;
-}
-
-.WrapperDetail{
-    padding: 50px;
-    display: flex;
+    margin-right: 15px;
 }
 
 .ImgContainer{
@@ -65,8 +39,114 @@
     padding: 0px 50px;
 }
 
-.ImagePreview {
+.cajaProductos{
+    margin: 80px 0px 0px 0px !important;
+    z-index: 2;
+    opacity: 1;
+}
+
+.contenedorProductos{
+    filter: contrast(110%);
+    filter: brightness(110%);
+}
+
+/* DETALLES */
+
+.WrapperDetail{
+    position: absolute;
+    margin: 40px 0px 0px 0px;
+    padding: 50px;
+    display: flex;
+}
+
+
+/* CARDS*/
+
+.Cards {
+    margin: 1%;
+    padding: 0px 0px 0px 0px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.cardImagePreview {
     height: 250px !important;
     object-fit: cover !important;
     object-position: 0% 0%;
+    z-index: 2;
 }
+
+.cardInfo{
+    opacity: 0;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    justify-content: space-around !important;
+    flex-direction: column !important;
+    transition: all 1s ease;
+}
+
+.cardInfo:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.633)
+}
+
+.VerMas {
+    background-color: rgba(255, 255, 255, 0.856) !important;
+    border-radius: 20px !important;
+    border-color: black !important;
+    width: 30%;
+}
+
+.VerMasText {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cardVerMas{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.cardPrice{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.cardTitle{
+    text-align: center;
+    font-size: 30px !important;
+    color: rgb(255, 153, 0);
+}
+
+.botonCant {
+    background-color: rgb(255, 153, 0) !important;
+    border-color: black !important;
+    border-width: 2px !important;
+    border-radius: 15px !important;
+    margin: 1px;
+}
+
+.ProductAmount {
+    font-size: 24px;
+    color: white;
+    margin: 0% 2%;
+}
+
+.ProductAmountContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
