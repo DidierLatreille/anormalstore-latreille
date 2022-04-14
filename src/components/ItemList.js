@@ -7,7 +7,6 @@ export default function ItemList({productos}) {
 
     return (
         <>
-            <div className='contenedorTotal'></div>
             <Container className='contenedorProductos'>
                 <Row className='cajaProductos'>
                     {   

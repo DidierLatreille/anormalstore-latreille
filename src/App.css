@@ -54,31 +54,25 @@ body{
     filter: brightness(110%);
 }
 
-/* DETALLES */
-
-.WrapperDetail{
-    position: absolute;
-    margin: 40px 0px 0px 0px;
-    padding: 50px;
-    display: flex;
-}
-
-
 /* CARDS*/
 
 .Cards {
-    margin: 1% 0.5%;
+    margin: 2% 1.25%;
+    border-width: 0px !important;
     padding: 0px 0px 0px 0px !important;
     display: inline-flex !important;
     justify-content: center !important;
     align-items: center;
+    border-radius: 25px !important;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.437);
 }
 
 .cardImagePreview {
     height: 250px !important;
     object-fit: cover !important;
-    object-position: 0% 0%;
+    object-position: 25% 15%;
     z-index: 2;
+    border-radius: 25px !important;
 }
 
 .cardInfo{
@@ -94,11 +88,13 @@ body{
     justify-content: space-around !important;
     flex-direction: column !important;
     transition: all 1s ease;
+    border-radius: 25px !important;
 }
 
 .cardInfo:hover{
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.633)
+    background-color: rgba(0, 0, 0, 0.633);
+    border-radius: 25px !important;
 }
 
 .VerMas {
@@ -108,6 +104,12 @@ body{
     border-color: black !important;
     width: 100%;
     height: 100%;
+}
+
+.VerMas:hover {
+    outline: none !important;
+    border-color: #ff00cc !important;
+    box-shadow: 0 0 50px #ff00cc !important;
 }
 
 .VerMasText {
@@ -141,19 +143,20 @@ body{
 
 .botonCant {
     background-color: rgb(255, 153, 0) !important;
-    border-color: black !important;
-    border-width: 2px !important;
+    border-color: rgb(255, 255, 255) !important;
+    border-width: 0px !important;
     border-radius: 25px !important;
-    margin: 1%;
-    width: 40px;
+    margin: 0%;
+    width: 35px;
 }
 
 .addToCart{
     background-color: rgb(255, 153, 0) !important;
-    border-color: black !important;
-    border-width: 2px !important;
+    border-color: rgb(255, 255, 255) !important;
+    border-width: 0px !important;
     border-radius: 25px !important;
     margin: 1px;
+    margin-left: 10px !important;
 }
 
 .ProductAmount {
@@ -167,10 +170,10 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0px;
+    width: 100%;
 }
 
 .Link{
     width: 30%;
     height: 100%;
 }
-

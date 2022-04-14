@@ -55,12 +55,12 @@ const data = [
     },
     {
         id: 7,
-        title: "Imagen-6",
+        title: "SolNaranja",
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
-        categoryId: 1,
-        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        categoryId: 3,
+        img: "https://i.ibb.co/pn1FGQ9/epicSun5.jpg"
     },
     {
         id: 8,

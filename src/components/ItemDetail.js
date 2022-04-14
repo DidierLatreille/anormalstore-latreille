@@ -1,4 +1,6 @@
+import "./details.css";
 import ItemCount from './ItemCount';
+import { Container } from 'reactstrap'
 
 const ItemDetail = ({ item }) => {
 
@@ -12,20 +14,20 @@ const ItemDetail = ({ item }) => {
         <>{
             item && item.img
             ?
-            <div className='DetailContainer'>
-                <div className='WrapperDetail'>
-                    <div className='ImgContainer'>
-                        <img alt="" className='ImageDetail' src={item.img} />
+                <Container>
+                    <div className='WrapperDetail'>
+                        <div className="ImageContainer">
+                            <img alt="" className='ImageDetail' src={item.img} />
+                        </div>
+                        <div className='InfoContainer'>
+                            <div className="detailTitle">{item.title}</div>
+                            <div className="detailDescrip">{item.description}</div>
+                            <div className="detailPrice">Precio: $ {item.price}</div>
+                            <div className="detailStock">{item.stock} unidades en stock</div>
+                            <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+                        </div>
                     </div>
-                    <div className='InfoContainer'>
-                        <div>{item.title}</div>
-                        <div>{item.description}</div>
-                        <div>$ {item.price}</div>
-                        <div>{item.stock} unidades en stock</div>
-                    </div>
-                    <ItemCount className="ContadorDetalle" stock={item.stock} initial={1} onAdd={onAdd} />
-                </div>
-            </div>
+                </Container>
             : <p>Cargando...</p>
         }
         </>
