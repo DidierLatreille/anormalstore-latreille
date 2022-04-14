@@ -18,7 +18,7 @@ export default function Item({ id, title, price, img, stock}) {
                     <Card.Title className="cardTitle">{title}</Card.Title>
                 <Card.Text className="cardPrice">{price}</Card.Text>
                 <div className="cardVerMas">
-                    <Button className="VerMas"><Link className="VerMasText" to={`/item/${id}`}>Ver +</Link></Button>
+                <Link class="Link" to={`/item/${id}`}><Button className="VerMas"><p className="VerMasText">Ver +</p></Button></Link>
                 </div>
                 <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
                 </Card.Body>

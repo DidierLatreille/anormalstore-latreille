@@ -19,7 +19,7 @@ const data = [
     },
     {
         id: 3,
-        title: "Imagen-3",
+        title: "VialCostero",
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
@@ -28,30 +28,30 @@ const data = [
     },
     {
         id: 4,
-        title: "Imagen-4",
+        title: "Brote",
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
-        categoryId: 1,
-        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        categoryId: 4,
+        img: "https://i.ibb.co/4t491Xn/tomatin-Firmada.jpg"
     },
     {
         id: 5,
-        title: "Imagen-5",
+        title: "Di-San",
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
-        categoryId: 1,
-        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        categoryId: 3,
+        img: "https://i.ibb.co/d5gKwnC/sol-Raro1-Insta.jpg"
     },
     {
         id: 6,
-        title: "Imagen-6",
+        title: "La City",
         price: "20 U$D",
         description: "una muy buena imagen",
         stock:20,
-        categoryId: 1,
-        img: "https://i.ibb.co/h9R2v3B/imagen1.jpg"
+        categoryId: 2,
+        img: "https://i.ibb.co/9ZMpbc9/la-City-Firmada.jpg"
     },
     {
         id: 7,
