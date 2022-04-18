@@ -108,8 +108,8 @@ body{
 
 .VerMas:hover {
     outline: none !important;
-    border-color: #ff00cc !important;
-    box-shadow: 0 0 50px #ff00cc !important;
+    border-color: #ff0084 !important;
+    box-shadow: 0 0 50px #ff0084 !important;
 }
 
 .VerMasText {

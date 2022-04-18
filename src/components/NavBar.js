@@ -20,7 +20,7 @@ const NavBar = () => {
                       <Link to='/category/2' className="ItemNavBar" style={{textDecoration: "none"}}>StreetPhotography</Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Link to='/category/3' className="ItemNavBar" style={{textDecoration: "none"}}>Luna/Sol</Link>
+                      <Link to='/category/3' className="ItemNavBar" style={{textDecoration: "none"}}>Astros</Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Link to='/category/4' className="ItemNavBar" style={{textDecoration: "none"}}>Miscelaneo</Link>
