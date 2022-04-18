@@ -1,11 +1,15 @@
 import "./details.css";
+import { useState } from 'react';
 import ItemCount from './ItemCount';
 import { Container } from 'reactstrap'
+import GoToCart from "./GoToCart";
 
 const ItemDetail = ({ item }) => {
+    const [itemCount, setItemCount] = useState(0);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
+        setItemCount(qty);
     }
 
     console.log()
@@ -24,7 +28,11 @@ const ItemDetail = ({ item }) => {
                             <div className="detailDescrip">{item.description}</div>
                             <div className="detailPrice">Precio: $ {item.price}</div>
                             <div className="detailStock">{item.stock} unidades en stock</div>
-                            <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+                            {
+                                itemCount === 0
+                                ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                                : <GoToCart/>
+                            }
                         </div>
                     </div>
                 </Container>
