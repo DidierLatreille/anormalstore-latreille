@@ -148,6 +148,9 @@ body{
     border-radius: 25px !important;
     margin: 0%;
     width: 35px;
+    color: black !important;
+    font-weight: 800 !important;
+    font-size: 17px !important;
 }
 
 .addToCart{
@@ -157,11 +160,13 @@ body{
     border-radius: 25px !important;
     margin: 1px;
     margin-left: 10px !important;
+    color: black !important;
+    font-weight: 700 !important;
 }
 
 .ProductAmount {
     font-size: 24px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin: 0% 2%;
 }
 

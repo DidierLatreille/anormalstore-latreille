@@ -1,14 +1,9 @@
 import React from "react";
 import { Card, Button } from 'react-bootstrap';
-import ItemCount from "./ItemCount";
 import { Link } from 'react-router-dom';
 import "../App.css";
 
 export default function Item({ id, title, price, img, stock}) {
-
-    const onAdd = (qty) => {
-        alert("Has seleccionado " + qty + " items.");
-    }
 
     return (
         <>
@@ -20,7 +15,6 @@ export default function Item({ id, title, price, img, stock}) {
                 <div className="cardVerMas">
                 <Link class="Link" to={`/item/${id}`}><Button className="VerMas"><p className="VerMasText">Ver +</p></Button></Link>
                 </div>
-                <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
                 </Card.Body>
             </Card>
         </>
