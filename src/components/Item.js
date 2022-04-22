@@ -13,7 +13,7 @@ export default function Item({ id, title, price, img, stock}) {
                     <Card.Title className="cardTitle">{title}</Card.Title>
                 <Card.Text className="cardPrice">{price}</Card.Text>
                 <div className="cardVerMas">
-                <Link class="Link" to={`/item/${id}`}><Button className="VerMas"><p className="VerMasText">Ver +</p></Button></Link>
+                <Link className="Link" to={`/item/${id}`}><Button className="VerMas"><p className="VerMasText">Ver +</p></Button></Link>
                 </div>
                 </Card.Body>
             </Card>

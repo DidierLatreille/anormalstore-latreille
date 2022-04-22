@@ -10,8 +10,6 @@ const ItemListContainer = () => {
     const [fotos, setFotos] = useState([])
     const { idCategory } = useParams();
 
-    console.log(idCategory);
-
     useEffect(() => {
         customFetch(100, data.filter(item => {
             if(idCategory === undefined) return item;

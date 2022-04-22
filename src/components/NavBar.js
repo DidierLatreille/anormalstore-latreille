@@ -9,7 +9,7 @@ const NavBar = () => {
         <>
         <Navbar className="NavBar" bg="dark" variant="white">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
                 <Link style={{textDecoration: "none"}} to='/'><h1 className="TituloNavBar">AnormalStore</h1></Link>
                 </Navbar.Brand>
                 <Nav className="justify-content-center" activeKey="/home">

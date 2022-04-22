@@ -5,6 +5,7 @@ import "../App.css";
 const ItemCount = ({ stock, initial,  onAdd }) => {
     const [count, setCount] = useState(0);
 
+
     useEffect(() => {
         setCount(initial);
     },[]);
@@ -27,7 +28,7 @@ const ItemCount = ({ stock, initial,  onAdd }) => {
             <div className='ProductAmount'>{count}</div>
             <Button className= "botonCant" onClick={aumentar}>+</Button>
             {
-                stock
+                stock && count
                 ? <Button className= "addToCart" onClick={() => onAdd(count)}>Agregar al carrito</Button>
                 : <Button disabled>Sin stock</Button>
             }    

@@ -1,18 +1,19 @@
 import "./details.css";
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import ItemCount from './ItemCount';
 import { Container } from 'reactstrap'
 import GoToCart from "./GoToCart";
+import { CartContext } from "./CartContext";
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
+    const test = useContext(CartContext);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
         setItemCount(qty);
+        test.addItem(item);
     }
-
-    console.log()
 
     return (
         <>{
