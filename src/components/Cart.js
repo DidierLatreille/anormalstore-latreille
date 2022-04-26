@@ -5,6 +5,10 @@ import { CartContext } from './CartContext';
 const Cart = () => {
     const test = useContext(CartContext);
 
+    function subtotal(item){
+        return item.price * item.qtyItem;
+    }
+
     return (
         <div className='WrapperCart'>
             <div className='TitleCart'>YOUR CART</div>
@@ -26,13 +30,17 @@ const Cart = () => {
                                 </div>
                                 <div className='PriceDetail'>
                                     <div className='ProductAmountContainer'>
-                                    <p className='ProductAmount'>2 items</p>
+                                    <p className='ProductAmount'>Cantidad: {item.qtyItem}</p>
                                     </div>
-                                    <p className='ProductPrice'>$ {item.price}</p>
+                                    <p className='ProductPrice'>Precio por unidad: {item.price}</p>
+                                    <p className='ProductPrice'>Subtotal: {subtotal(item)}</p>
                                 </div>
                             </div>
                         )
                     }
+                     <div>
+                        <h3>Total Carrito: {test.totalCarro()}</h3>
+                    </div>
                 </div>
              )
             }

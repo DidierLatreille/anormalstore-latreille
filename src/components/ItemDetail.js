@@ -12,7 +12,7 @@ const ItemDetail = ({ item }) => {
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
         setItemCount(qty);
-        test.addItem(item);
+        test.addItem(item, qty);
     }
 
     return (
@@ -27,7 +27,7 @@ const ItemDetail = ({ item }) => {
                         <div className='InfoContainer'>
                             <div className="detailTitle">{item.title}</div>
                             <div className="detailDescrip">{item.description}</div>
-                            <div className="detailPrice">Precio: $ {item.price}</div>
+                            <div className="detailPrice">Precio: {item.price} U$D</div>
                             <div className="detailStock">{item.stock} unidades en stock</div>
                             {
                                 itemCount === 0

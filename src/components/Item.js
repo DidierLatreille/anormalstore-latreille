@@ -11,7 +11,7 @@ export default function Item({ id, title, price, img, stock}) {
                 <Card.Img className='cardImagePreview' variant="top" src={img} />
                 <Card.Body className="cardInfo">
                     <Card.Title className="cardTitle">{title}</Card.Title>
-                <Card.Text className="cardPrice">{price}</Card.Text>
+                <Card.Text className="cardPrice">{price} U$D</Card.Text>
                 <div className="cardVerMas">
                 <Link className="Link" to={`/item/${id}`}><Button className="VerMas"><p className="VerMasText">Ver +</p></Button></Link>
                 </div>

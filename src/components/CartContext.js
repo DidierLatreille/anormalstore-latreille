@@ -22,6 +22,11 @@ const CartContextProvider = ({children}) => {
         } else {
             found.qtyItem += quantity;
         }
+        console.log(cartList);
+    }
+
+    const itemsEnCarro = () => {
+        return cartList.reduce((a,v) => a = a + v.qtyItem , 0);
     }
 
     const clear = () => {
@@ -29,12 +34,16 @@ const CartContextProvider = ({children}) => {
     }
 
     const deleteItem = (id) => {
-        let result = cartList.filter(item => item.id != id);
+        let result = cartList.filter(item => item.id !== id);
         setCartList(result);
     }
 
+    const totalCarro = () => {
+        return cartList.reduce((a,v) => a = a + v.price * v.qtyItem , 0);
+    }
+
     return (
-        <CartContext.Provider value={{cartList, addItem, clear, deleteItem}}>
+        <CartContext.Provider value={{cartList, addItem, clear, deleteItem, totalCarro, itemsEnCarro}}>
             {children}
         </CartContext.Provider>
     )

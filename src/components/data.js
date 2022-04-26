@@ -2,7 +2,7 @@ const data = [
     {
         id: 1,
         title: '" Herbarium-14 "',
-        price: "10 U$D",
+        price: 10,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 2,
@@ -11,7 +11,7 @@ const data = [
     {
         id: 2,
         title: '" Herbarium-9 "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 2,
@@ -20,7 +20,7 @@ const data = [
     {
         id: 3,
         title: '" VialCostero "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 2,
@@ -29,7 +29,7 @@ const data = [
     {
         id: 4,
         title: '" Brote "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 4,
@@ -38,7 +38,7 @@ const data = [
     {
         id: 5,
         title: '" Di-San "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 3,
@@ -47,7 +47,7 @@ const data = [
     {
         id: 6,
         title: '" La City "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 2,
@@ -56,7 +56,7 @@ const data = [
     {
         id: 7,
         title: '" SolNaranja "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 3,
@@ -65,7 +65,7 @@ const data = [
     {
         id: 8,
         title: '" Imagen-6 "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 1,
@@ -74,7 +74,7 @@ const data = [
     {
         id: 9,
         title: '" Imagen-6 "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 1,
@@ -83,7 +83,7 @@ const data = [
     {
         id: 10,
         title: '" Imagen-6 "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 1,
@@ -92,7 +92,7 @@ const data = [
     {
         id: 11,
         title: '" Imagen-6 "',
-        price: "20 U$D",
+        price: 20,
         description: "una muy buena imagen",
         stock:20,
         categoryId: 1,

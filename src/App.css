@@ -203,6 +203,9 @@ body{
 .Product{
     display: flex;
     justify-content: space-between;
+    background-color: #fbca74;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.418);
 }
 
 .ProductDetail{
@@ -230,6 +233,6 @@ body{
 }
 
 .ProductPrice{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 200;
 }
