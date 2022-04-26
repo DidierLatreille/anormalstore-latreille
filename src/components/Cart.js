@@ -23,7 +23,7 @@ const Cart = () => {
                                     <img  className='ImageCart' src={item.img} alt="hola"/>
                                     <div className='Details'>
                                         <span>
-                                            <b>Product:</b> {item.title}
+                                            <b className='TitleProduct'>Product: {item.title}</b>
                                         </span>
                                         <button type="filled" onClick={() => test.deleteItem(item.id)}>DELETE</button>
                                     </div>

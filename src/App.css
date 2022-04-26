@@ -217,6 +217,10 @@ body{
     width: 200px;
 }
 
+.TitleProduct{
+    font-size: 22px;
+}
+
 .Details{
     padding: 20px;
     display: flex;
