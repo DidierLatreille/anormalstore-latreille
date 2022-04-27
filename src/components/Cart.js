@@ -15,6 +15,7 @@ const Cart = () => {
             <button onClick={test.clear}>ELIMINAR TODOS</button>
             {
              test.cartList.length > 0 && (
+            <>
                 <div className='ContentCart'>
                     {
                         test.cartList.map( item => 
@@ -38,10 +39,13 @@ const Cart = () => {
                             </div>
                         )
                     }
-                     <div>
-                        <h3>Total Carrito: {test.totalCarro()}</h3>
-                    </div>
                 </div>
+            <div className='resumenCompra'>
+                <h2 className='tituloResumenCompra'>Resumen de compra</h2>
+                <h3>Total Carrito: {test.totalCarro()}</h3>
+                <button>Terminar mi compra</button>
+            </div>
+            </>
              )
             }
         </div>
