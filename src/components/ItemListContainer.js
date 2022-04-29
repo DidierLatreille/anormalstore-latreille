@@ -11,13 +11,20 @@ const ItemListContainer = () => {
     const { idCategory } = useParams();
 
     useEffect(() => {
-        customFetch(100, data.filter(item => {
+        customFetch(500, data.filter(item => {
             if(idCategory === undefined) return item;
-            return item.categoryId === parseInt(idCategory)
+            return item.categoryId === parseInt(idCategory);
         }))
         .then(result => setFotos(result))
         .catch(err => console.log(err))
     }, [fotos]);
+
+    //componentWillUnmount
+    useEffect(() => {
+        return (() => {
+            setFotos([]);
+        })
+    }, []);
 
     return (
         <>

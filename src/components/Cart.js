@@ -1,6 +1,7 @@
 import '../App.css';
 import { useContext } from 'react';
 import { CartContext } from './CartContext';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const test = useContext(CartContext);
@@ -12,14 +13,23 @@ const Cart = () => {
     return (
         <div className='WrapperCart'>
             <div className='TitleCart'>YOUR CART</div>
-            <button onClick={test.clear}>ELIMINAR TODOS</button>
+            {
+                    (test.cartList.length > 0)
+                    ? <button onClick={test.clear}>ELIMINAR TODOS</button>
+                    : <div>
+                        <p>Your cart is empty</p>
+                        <Link to='/' >
+                            <button>Ir a la Tienda</button>
+                        </Link>
+                    </div>
+            }
             {
              test.cartList.length > 0 && (
             <>
                 <div className='ContentCart'>
                     {
                         test.cartList.map( item => 
-                            <div className='Product'>
+                            <div key={item.id} className='Product'>
                                 <div className='ProductDetail'>
                                     <img  className='ImageCart' src={item.img} alt="hola"/>
                                     <div className='Details'>
