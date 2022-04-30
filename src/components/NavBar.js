@@ -14,16 +14,16 @@ const NavBar = () => {
                 </Navbar.Brand>
                 <Nav className="justify-content-center" activeKey="/home">
                     <Nav.Item>
-                      <Link to='/category/1' className="ItemNavBar" style={{textDecoration: "none"}}>Animales</Link>
+                      <Link to='/category/animales' className="ItemNavBar" style={{textDecoration: "none"}}>Animales</Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Link to='/category/2' className="ItemNavBar" style={{textDecoration: "none"}}>StreetPhotography</Link>
+                      <Link to='/category/streetPhotography' className="ItemNavBar" style={{textDecoration: "none"}}>StreetPhotography</Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Link to='/category/3' className="ItemNavBar" style={{textDecoration: "none"}}>Astros</Link>
+                      <Link to='/category/astros' className="ItemNavBar" style={{textDecoration: "none"}}>Astros</Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Link to='/category/4' className="ItemNavBar" style={{textDecoration: "none"}}>Miscelaneo</Link>
+                      <Link to='/category/miscelaneo' className="ItemNavBar" style={{textDecoration: "none"}}>Miscelaneo</Link>
                     </Nav.Item>
                     <Nav.Item>
                       <CartWidget/>

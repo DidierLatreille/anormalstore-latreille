@@ -19,12 +19,3 @@ export default function ItemList({productos}) {
         </>
     )
 }
-
-/* 
-
-{productos.map((product) => (
-                        <Item key={product.id} {...product} />
-                        ))
-                    }
-
-*/
