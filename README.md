@@ -1,4 +1,4 @@
-## Proyecto para curso de REACTJS - CODERHOUSE
+## Proyecto para curso de REACTJS - CoderHouse
 
 AnormalStore es un e-commerce de fotografia. En la web, los usuarios pueden ver una preview de las imagenes en catalogo
 y de querer descargarla en calidad original, proceder con la compra.
