@@ -1,5 +1,7 @@
 ## Proyecto para curso de REACTJS - CoderHouse
 
+ ![image]( https://github.com/DidierLatreille/anormalstore-latreille/blob/master/recorridoAnormalStore.gif)
+
 AnormalStore es un e-commerce de fotografia. En la web, los usuarios pueden ver una preview de las imagenes en catalogo
 y de querer descargarla en calidad original, proceder con la compra.
 
